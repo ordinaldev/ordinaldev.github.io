@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1">
+    <title>Mobile UI</title>
+    <!-- <link rel="stylesheet" 
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome.css">
+</head>
+
+<body id="body">
+
+    <header>
+        <nav>
+            <div class="info">
+                <p>Hey!</p>
+                <p>Don't forget to ABSEN</p>
+            </div>
+            <div class="img xs" style="background-image: url(113769888.png)"></div>
+        </nav>
+        <div class="search">
+            <span class="las la-search"></span>
+            <input type="text" placeholder="Search your Tools ...">
+        </div>
+    </header>
+
+    <main>
+
+        <div class="promo">
+            <div class="items promo-items">
+                <div class="promo-item">
+                    <div class="promo-info">
+                        <h3>Motivation Today</h3>
+                        <h6 style="color: #eee;">"Pencapaian terbesar umat manusia terjadi dengan berbicara, dan
+                            kegagalan terbesarnya adalah dengan tidak berbicara"</h6>
+                        <h5>- Stephen Hawking -</h5>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-info">
+                        <h3>Motivation Today</h3>
+                        <h6 style="color: #eee;">"Ibuku berpikir aku yang terbaik. Dan aku dibesarkan untuk selalu
+                            percaya apa yang ibuku katakan padaku"</h6>
+                        <h5>- Diego Maradona -</h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="popular section-wrapper">
+            <div class="flex-header">
+                <h2>Popular Setup</h2>
+                <a href=""><strike>See all</strike></a>
+            </div>
+
+            <div class="categories section-wrapper">
+                <div class="category-items">
+                    <div class="category-item nano">
+                        <a href="https://lms.plb.ac.id/signin">
+                            <div class="item-img" style="background-image: url('./lms.png')">
+                            </div>
+                            <h4>LMS</h4>
+                        </a>
+                    </div>
+                    <div class="category-item nano">
+                        <a href="https://siakad.plb.ac.id">
+                            <div class="item-img" style="background-image: url('./siakad.png')">
+                            </div>
+                            <h4>Siakad</h4>
+                        </a>
+                    </div>
+                    <div class="category-item nano">
+                        <a href="https://krs.plb.ac.id/">
+                            <div class="item-img" style="background-image: url('./KRS.png')">
+                            </div>
+                            <h4>KRS</h4>
+                        </a>
+                    </div>
+                    <div class="category-item nano">
+                        <a href="https://lp3ipekanbaru.ac.id">
+                            <div class="item-img" style="background-image: url(web.png)">
+                            </div>
+                            <h4>Web</h4>
+                        </a>
+                    </div>
+                    <div class="category-item nano">
+                        <div class="item-img" style="background-image: url('soon.png')">
+                        </div>
+                        <h4 style="color:orange ;">???</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <br>
+            <div class="flex-header">
+                <h2>About Author</h2>
+            </div>
+            <br>
+
+            <p class="auth">Name : Raihan Rivana Putra</p>
+            <p class="auth">Contact : <a href="mailto:raihanrivanaputra@gmail.com">Click Here</a></p>
+
+    </main>
+
+
+    <div class="bottom-nav">
+        <div class="bottom-inner">
+            <div class="bottom-main">
+                <div class="nav-items">
+                    <div class="nav-item">
+                        <img class="icon" src="house-solid.svg">
+                        <p>Home</p>
+                    </div>
+                    <div class="nav-item">
+                        <img class="icon" src="question-solid.png">
+                        <p>GuesS</p>
+                    </div>
+                </div>
+                <div class="nav-item-main">
+                    <div>
+                        <img class="icon" src=" laptop-file-solid2.svg">
+                    </div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-item">
+                        <img class="icon" src="question-solid.png">
+                        <p>GuesS</p>
+                    </div>
+                    <div class="nav-item">
+                        <img class="icon" src="question-solid.png">
+                        <p>GuesS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const mq = window.matchMedia("(min-width: 430px)");
+    var top = document.getElementById("body");
+
+    if (mq.matches) {
+        document.write('<img src="or.png" width="100%" height="100%" />');
+        document.write('<style>body{display:none;}</style>');
+    } else {
+
+    }
+</script>
+
+</html>
