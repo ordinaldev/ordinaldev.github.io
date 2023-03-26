@@ -1,0 +1,109 @@
+<html lang="en" x-data="{tema : 'light' , name : 'RivanaXz'}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" librari="IE=edge">
+    <meta name="viewport" librari="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href=".assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/mylib_home.css">
+    <title>Portfolio | RivanaXz</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <h1 class="logoImg text-3xl">Rivana<span class="logo-color">X<span class="logo-color2"></span>z</span></h1>
+        </a>
+
+        <div class="nav_right">
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/project">Project</a></li>
+                <li><a href="/blog">blog</a></li>
+
+            </ul>
+
+            <div class="theme_btn">
+                <div class="themeBtnToggle">
+                    <img src="img/sun.png" class="themeIcon">
+                </div>
+            </div>
+        </div>
+
+        <div class="toggleMenu">
+            <div class="line line_1"></div>
+            <div class="line line_2"></div>
+            <div class="line line_3"></div>
+        </div>
+
+    </nav>
+    <section class="blog_hero"
+        x-data="{judul : 'Custom Library',librari : 'Berikut adalah Beberapa Library dan Framework yang sudah saya custom'}">
+        <h1 x-text="judul" class="judul" style="padding-top: 25px;">Loading</h1>
+        <p x-text="librari" class="sec_skill_content">Loading</p>
+
+        <center>
+            <table border="1">
+                <tr>
+                    <th width="25">No</th>
+                    <th width="250">Nama Library</th>
+                    <th width="100">Aksi</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Alpine JS</th>
+                    <th><a href="alpine/">Lihat</a></th>
+                </tr>
+
+            </table>
+        </center>
+
+
+    </section>
+</body>
+<style>
+    table {
+        color: var(--text_color);
+        margin-bottom: 25px;
+
+    }
+
+    body {
+        min-height: 80vh;
+    }
+
+    * .teks {
+        color: var(--text_color);
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 30vh;
+        background-color: var(--white_color);
+    }
+
+    .copyright {
+        font-size: small;
+        padding: 5px;
+        text-align: center;
+        color: var(--text_color);
+    }
+</style>
+<footer class="footer">
+    <a href="/" class="logo">
+        <h1 class="logoImg text-3xl">Rivana<span class="logo-color">X<span class="logo-color2"></span>z</span></h1>
+    </a>
+    <hr>
+    <div class="copyright">
+        Copyright© <span x-text="name"></span> 2023<br> Developed By Raihan Rivana Putra
+    </div>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script async src="../mylib/typer/typer.js"></script>
+<script src="../mylib/alpine/cdn.js"></script>
+
+</html>

@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine JS</title>
+</head>
+
+<body
+    x-data="{app_name : 'Alpine JS', app_for : 'Frontend Developer', Author : 'Caleb Porzio',release : '2019',Language : 'Javascript',perubahan : 'a few changes to the navbar toggle creation process'}">
+    <a href="../index.html"
+        style="font-weight: bold;padding: 10px;background-color: white;width: 100%;height: 50px;margin-top: 10px;">
+        &lt; Back To Mylib
+    </a>
+    <div class="overflow-hidden bg-white shadow sm:rounded-lg">
+        <div class="px-4 py-5 sm:px-6">
+            <h3 class="text-base font-semibold leading-6 text-gray-900">Library Information</h3>
+            <p class="mt-1 max-w-2xl text-sm text-gray-500">Personal details from application.</p>
+        </div>
+        <div class="border-t border-gray-200">
+            <dl>
+                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">Application Name</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" x-text="app_name">Loading</dd>
+                </div>
+                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">Application for</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" x-text="app_for">Loading</dd>
+                </div>
+                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">Author</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" x-text="Author">Loading - <span
+                            x-text="release">Loading</span></dd>
+                </div>
+                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">Programming Language</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" x-text="Language">Loading</dd>
+                </div>
+                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">changes made</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0" x-text="perubahan">Loading</dd>
+                </div>
+                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">File</dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                        <ul role="list" class="divide-y divide-gray-200 rounded-md border border-gray-200">
+                            <li class="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
+                                <div class="flex w-0 flex-1 items-center">
+                                    <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="ml-2 w-0 flex-1 truncate">
+                                        <script>
+                                            document.write('<input value="' + document.domain + '/mylib/alpine/alpine.js" id="text-copy" readonly > ')
+                                        </script>
+                                        <!-- <input value="http://127.0.0.1:5500//mylib/alpine/alpine.js" id="text-copy"
+                                             readonly> -->
+                                    </span>
+                                </div>
+                                <div class="ml-4 flex-shrink-0">
+                                    <button href="#" onclick="copyText()" class=" font-medium text-indigo-600
+                                        hover:text-indigo-500">copy</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("text-copy");
+            copyText.select();
+            document.execCommand("copy");
+            alert('telah disalin')
+        }
+    </script>
+    <style>
+        input {
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./cdn.js"></script>
+
+</html>

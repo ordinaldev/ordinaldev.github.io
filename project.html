@@ -1,0 +1,199 @@
+<html lang="en" x-data="{tema : 'light' , name : 'RivanaXz'}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href=".assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <title>Portfolio | RivanaXz</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <h1 class="logoImg text-3xl">Rivana<span class="logo-color">X<span class="logo-color2"></span>z</span></h1>
+        </a>
+
+        <div class="nav_right">
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/project" class="active">Project</a></li>
+                <li><a href="/blog">blog</a></li>
+
+            </ul>
+
+            <div class="theme_btn">
+                <div class="themeBtnToggle">
+                    <img src="img/sun.png" class="themeIcon">
+                </div>
+            </div>
+        </div>
+
+        <div class="toggleMenu">
+            <div class="line line_1"></div>
+            <div class="line line_2"></div>
+            <div class="line line_3"></div>
+        </div>
+
+    </nav>
+    <section class="blog_hero" x-data="{judul : 'My Project',content : 'Berikut adalah project yang saya kerjakan'}">
+        <h1 x-text="judul" class="judul" style="padding-top: 25px;">Loading</h1>
+        <p x-text="content" class="sec_skill_content">Loading</p>
+    </section>
+    <style>
+        .kolase,
+        ul {
+            display: flex;
+        }
+
+        .kolase,
+        ul,
+        li {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        @media(max-width: 850px) {
+            .kolase {
+                display: none;
+            }
+        }
+    </style>
+
+    <section class="bg-transparent dark:bg-transparent ">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img class="w-full dark:hidden" src="./assets/img/scs.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="./assets/img/scs.png" alt="dashboard image">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold teks">Skull Cyber Security</h2>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Skull Cyber Security merupakan
+                    sebuah komunitas IT yang sering menyelenggarakan webinar dan kompetisi IT. pada project ini saya
+                    mengerjakan web dari sisi frontend dan backend.(2019 - 2023)</p>
+                <div class="kolase">
+                    <ul>
+                        <li><img src="./assets/img/HTML5_logo_and_wordmark.svg.png" alt="html5" width="50"></li>
+                        <li><img src="./assets/img/CSS3_logo_and_wordmark.svg.png" alt="css" width="35"></li>
+                        <li><img src="./assets/img/Unofficial_JavaScript_logo_2.svg.png" alt="js" width="40"
+                                style="margin-top: 5px;"></li>
+                        <li><img src="./assets/img/Bootstrap_logo.svg.png" alt="Bootstrap" width="50"
+                                style="margin-top: 5px;"></li>
+                        <li><img src="./assets/img/Codeigniter.png" alt="ci" width="40" height="auto"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="gap-8 items-center  flex-col  py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold teks">Project : Red Scabbard</h2>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Merupakan game 3D MMORPG dimana
+                    player akan memainkan karakter seorang samurai merah yang akan membantai semua monster yang ada di
+                    arena. game ini dibuat untuk android kelas menengah dan berbasis offline. (2020 - 2021)</p>
+                <div class="kolase">
+                    <ul>
+                        <li><img src="https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png" alt="unity"
+                                width="50"></li>
+                        <li><img src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="c#"
+                                width="40" style="margin-top: 5px;"></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1251px-Blender_logo_no_text.svg.png"
+                                alt="c#" width="50" style="margin-top: 5px;"></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="w-full dark:hidden" src="./assets/img/ini.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="./assets/img/ini.png" alt="dashboard image">
+        </div>
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img class="w-full dark:hidden" src="./assets/img/LP3i Mobile.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="./assets/img/LP3i Mobile.png" alt="dashboard image">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold teks">LP3i Mobile</h2>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">LP3i Mobile merupakan aplikai
+                    berbasis android yang didalamnya terapat akses ke platform yang disediakan LP3i. aplikasi ini
+                    merupakan aplikasi tidak resmi dan pembaharuan yang tidak pasti. (2023 - saat ini)</p>
+                <div class="kolase">
+                    <ul>
+                        <li><img src="./assets/img/Kotlin_Icon.png" alt="kotlin" width="40" style="margin-top: 5px;">
+                        </li>
+                        <li><img src="./assets/img/HTML5_logo_and_wordmark.svg.png" alt="html5" width="50"></li>
+                        <li><img src="./assets/img/CSS3_logo_and_wordmark.svg.png" alt="css" width="35"></li>
+                        <li><img src="./assets/img/php.png" alt="css" width="75" style="margin-top: 5px;"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="gap-8 items-center  flex-col  py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold teks">Re:Born</h2>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Re:born merupakan sebuah game
+                    kelas berat yang bergenre Openworld Action Adventure. game ini masih dalam tahap perkembangan
+                    dikarenakan developer ingin membuat aplikasi ini berbasis crossplatform dan memiliki fitur
+                    multiplayer.<br>
+                    (2022 - saat ini)</p>
+                <div class="kolase">
+                    <ul>
+
+                        <li><img src="https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png" alt="unity"
+                                width="50"></li>
+                        <li><img src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="c#"
+                                width="40" style="margin-top: 5px;"></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                                alt="c#" width="40" style="margin-top: 5px;"></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1251px-Blender_logo_no_text.svg.png"
+                                alt="c#" width="50" style="margin-top: 5px;"></li>
+                    </ul>
+                </div>
+
+            </div>
+            <img class="w-full dark:hidden" src="./assets/img/ini 2.png" alt="dashboard image">
+            <img class="w-full hidden dark:block" src="./assets/img/ini 2.png" alt="dashboard image">
+        </div>
+    </section>
+
+
+</body>
+<style>
+    * .teks {
+        color: var(--text_color);
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: var(--white_color);
+    }
+
+    .copyright {
+        font-size: small;
+        padding: 5px;
+        text-align: center;
+        color: var(--text_color);
+    }
+</style>
+<footer>
+
+
+    <a href="/" class="logo">
+        <h1 class="logoImg text-3xl">Rivana<span class="logo-color">X<span class="logo-color2"></span>z</span></h1>
+    </a>
+    <hr>
+    <div class="copyright">
+        Copyright© <span x-text="name"></span> 2023<br> Developed By Raihan Rivana Putra
+    </div>
+</footer>
+<script src="./assets/js/app.js"></script>
+<script async src="./mylib/typer/typer.js"></script>
+<script src="./mylib/alpine/cdn.js"></script>
+
+</html>
