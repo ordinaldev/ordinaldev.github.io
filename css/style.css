@@ -1,0 +1,203 @@
+:root {}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+nav>.nav-header {
+    display: inline;
+}
+
+nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    /* color: #fff; */
+
+    padding: 10px 10px 10px 10px;
+}
+
+nav>.nav-btn {
+    display: none;
+}
+
+nav>.nav-links {
+    background: white;
+    /* height: 300px; */
+    /* background-image: url('../img/bar.png'); */
+    background-size: cover;
+    display: inline;
+    float: right;
+    font-size: 18px;
+    border-bottom-left-radius: 25px;
+    margin-right: -10px;
+}
+
+nav>.nav-links>a {
+    margin: 10px;
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: darkgrey;
+    font-weight: bold;
+
+}
+
+nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+nav>#nav-check {
+    display: none;
+}
+
+.title {
+    font-family: 'jujutsu kaisen';
+    font-size: 30px;
+    text-shadow: 2px 2px 1px white;
+    padding: 10px;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.body {
+    background-image: url('../asset/bg.jpg');
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.hero {
+    /* border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%; */
+    display: block;
+    /* margin-top: -50px;
+    margin-bottom: -20px; */
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    padding: 10px;
+    width: 100%;
+    font-size: 50px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    margin-top: 200px;
+    font-weight: 100;
+}
+
+.hero-text-bg {
+    margin-left: 12%;
+    width: 75%;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.hero-subtitle {
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    font-family: 'northstar';
+
+}
+
+.nav {
+    /* padding: 15px; */
+    margin: 10px;
+}
+
+svg {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.hero-search {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 550px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.hero-input {
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 480px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.hero-button {
+    margin-left: -15px;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid gray;
+    color: gray;
+}
+
+.hero-title {
+    color: white;
+}
+
+.intro {
+    margin: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.intro-bg {
+    background: red;
+    width: 100%;
+}
+
+.intro-bg>.hero-img {
+    width: 250px;
+    height: 250px;
+    background: url('../asset/user.jpg');
+}
+
+
+.project {
+    margin: 100px;
+    margin-top: 50px;
+}
+
+.project-title {
+    color: black;
+
+}

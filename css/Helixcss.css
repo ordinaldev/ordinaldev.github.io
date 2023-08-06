@@ -1,0 +1,50 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+* {
+    transition: 0.5s;
+}
+
+@font-face {
+    font-family: "jujutsu kaisen";
+    src: url('../font/Jujutsu\ Kaisen.ttf');
+}
+
+@font-face {
+    font-family: "spongebob";
+    src: url('../font/Spongebob.ttf');
+}
+
+@font-face {
+    font-family: "death note";
+    src: url('../font/Death\ Note.ttf');
+}
+
+@font-face {
+    font-family: "piratedisco";
+    src: url('../font//PirateDisco.ttf');
+}
+
+@font-face {
+    font-family: "one piece";
+    src: url('../font/One\ Piece.ttf');
+}
+
+@font-face {
+    font-family: "black clover";
+    src: url('../font/Black\ Clover.ttf');
+}
+
+@font-face {
+    font-family: "attack on titan";
+    src: url('../font/attack\ on\ titan.ttf');
+}
+
+@font-face {
+    font-family: "northstar";
+    src: url('../font/northstar.ttf');
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url('../font/poppins.ttf');
+}

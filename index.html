@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respondsive.css">
+    <link rel="stylesheet" href="./css/Helixcss.css">
+    <title>PortoFolio</title>
+</head>
+
+<body>
+    <section class="nav">
+        <nav>
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <span style="font-family: 'Poppins';">Rivanaxz</span>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a>Github</a>
+
+            </div>
+        </nav>
+        <div class="intro">
+            <div class="intro-img">
+                <div class="intro-box">
+                    <img src="./7ca3168325c6c244ca123949400977ae.webp">
+                </div>
+            </div>
+            <div class="intro-content">
+                <div class="flex1">
+                    <h3>RivanaXz_</h3>
+                    <button>Web Dev</button>
+                    <button>Backend </button>
+                    <button></button>
+                </div>
+                <div class="flex2">
+                    <p><span>0</span>Product</p>
+                    <p><span>1</span>Creation</p>
+                    <p><span>0</span>Project</p>
+                </div>
+                <div class="flex3">
+                    <p>Hi My name is <span>Raihan Rivana Putra</span></p>
+                    <p>I am a Student From Pekanbaru</p>
+                    <p>I Learn about programming since 2017</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="post">
+        <div class="ads"></div>
+        <div class="flex4">
+            <div class="post-nav">
+                <p>Product</p>
+                <p class="active">Creation</p>
+                <p>Project</p>
+            </div>
+        </div>
+    </section>
+    <section class="contents">
+        <div class="flex5">
+            <div class="posts">
+                <img src="./asset/post/c_landing1.png" id="myBtn" class="img-post">
+
+            </div>
+            <div class="posts">
+
+
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"></span>
+                <div class="modal-flex">
+                    <div class="modal-img">
+                        <img src="./asset/post/c_landing2.png" alt="" srcset="">
+                    </div>
+                    <div class="modal-title">
+                        <h3>Borderfull Hero</h3>
+                        <p>borderfull hero is a website block that is located on the landing page. This block is
+                            suitable for your website which has a smooth or aesthetic theme.</p>
+                        <table>
+                            <h4>Information</h4>
+                            <tr>
+                                <td>Title</td>
+                                <td>:</td>
+                                <td> Borderfull Hero</td>
+                            </tr>
+                            <tr>
+                                <td>Reference</td>
+                                <td>:</td>
+                                <td><a
+                                        href="https://dribbble.com/shots/22135742-CarePro-Property-Insurance-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=hilevi&utm_content=CarePro%20-%20Property%20Insurance%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hilevi&utm_content=CarePro%20-%20Property%20Insurance%20Landing%20Page&utm_medium=Social_Share">
+                                        CarePro - Property Insurance Landing Page</a></td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>:</td>
+                                <td> HTML, CSS Vanilla</td>
+                            </tr>
+                            <tr>
+                                <td>Version</td>
+                                <td>:</td>
+                                <td> Still Development</td>
+                            </tr>
+                            <tr>
+                                <td>Respondsive</td>
+                                <td>:</td>
+                                <td>NO</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="unduh">
+                <button><span>Download</span> Starter Template</button>
+                <button><span>Download</span> Full Source Code</button>
+            </div>
+
+    </section>
+</body>
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+        modal.style.display = "block";
+        modal.style.transition = '0.5s';
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+        modal.style.transition = "0.5s";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.transition = "0.5s";
+            modal.style.display = "none";
+        }
+    }</script>
+
+</html>

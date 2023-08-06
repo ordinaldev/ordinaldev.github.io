@@ -1,0 +1,155 @@
+@media (max-width:600px) {
+    * {
+        transition: 0.5s;
+    }
+
+    nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    nav>.nav-btn>label:hover,
+    nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        border-radius: 100px;
+    }
+
+    nav>.nav-btn>label>.span1 {
+        display: block;
+        margin-left: 10px;
+        width: 15px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    nav>.nav-btn>label>.span2 {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    nav>.nav-btn>label>.span3 {
+        display: block;
+        width: 15px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .body {
+        margin: 0;
+    }
+
+    nav>.nav-links {
+        margin: 0;
+        margin-top: 10px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+
+    }
+
+    nav>.nav-links>a {
+        display: block;
+        /* width: 100%; */
+        text-align: center;
+    }
+
+    nav>.nav-links>a:hover {
+        transition: 0.5s;
+        background-color: red;
+    }
+
+    nav>.nav-links>a:hover::before {
+        transition: 0.5s;
+        padding-right: 10px;
+        content: '\f105 ';
+        font-family: "fontawesome";
+    }
+
+    nav>.nav-links>a:hover::after {
+        padding-left: 10px;
+        transition: 0.5s;
+        content: '\f104 ';
+        font-family: "fontawesome";
+    }
+
+    nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-text {
+        font-size: 40px;
+        margin-top: 75px;
+    }
+
+    .porto {
+        font-size: 90px;
+    }
+
+    .hero-text-bg {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-search {
+        margin-top: 25px;
+        margin-left: 12%;
+        width: 350px;
+    }
+
+    .hero-input {
+        width: 300px;
+    }
+
+    .hero-button {
+        width: 50px;
+    }
+
+    .project {
+        margin-top: 205px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 699px) {
+    .svg--lg {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    .svg--sm {
+        display: none;
+    }
+}
